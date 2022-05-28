@@ -1,6 +1,8 @@
-row_size=int(input())
-for out in range(row_size,0,-1):
-    for i in range(row_size,0,-1):
-        print(i,end=" ")
-
+x=int(input())
+for i in range(1,x+1):
+    for j in range(1,x+1):
+        if i==j:
+            print("0",end="")
+        else:
+            print("x",end="")
     print()
