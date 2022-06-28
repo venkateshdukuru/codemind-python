@@ -3,8 +3,8 @@ while t:
     a=int(input())
     temp=a
     while True:
-        for j in range(2,int(a**0.5)+1):
-            if(a%j==0):
+        for i in range(2,int(a**0.5)+1):
+            if(a%i==0):
                 break
         else:
             np=a
@@ -12,8 +12,8 @@ while t:
         a+=1
     a=temp
     while a:
-        for j in range(2,int(a**0.5)+1):
-            if(a%j==0):
+        for i in range(2,int(a**0.5)+1):
+            if(a%i==0):
                 break
         else:
             pp=a
@@ -27,4 +27,3 @@ while t:
     else:
         print(pp)
     t-=1
-    
