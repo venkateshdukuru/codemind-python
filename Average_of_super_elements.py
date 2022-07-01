@@ -1,11 +1,13 @@
-n=int(input())
+n=input()
 a=list(map(int,input().split()))
-x=[]
-for i in a:
-    if i==a.count(i) and i not in x:
-        x.append(i)
-if len(x)==0:
-    print(-1)
+b=set(a)
+c=[]
+d=0
+for i in b:
+    if a.count(i)==i:
+        c.append(i)
+        d+=1
+if d==0:
+    print("-1")
 else:
-    y=sum(x)/len(x)
-    print('%0.2f'%y)
+    print('{0:.2f}'.format(sum(c)/len(c)))
