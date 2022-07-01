@@ -5,7 +5,7 @@ b=[]
 for i in a:
     if i<x or i>y:
         b.append(i)
-if len(b)==0:
-    print(-1)
+if b==[]:
+    print('-1')
 else:
     print(min(b))
